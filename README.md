@@ -1,4 +1,4 @@
-# Pokedex App
+# Productos App
 
 
 This is a mobile app built over the course of Udemy React Native - Fernando Herrera. This works as a guide on how to consume an API,use the async storage to save the tokens, and to use the camera and gallery in order to save images to a web server.
