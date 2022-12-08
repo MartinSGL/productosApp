@@ -11,6 +11,7 @@ News
 - In this code navigation.replace() was used to avoid the user returning to the login screen once they are logged (check register screen)
 - A middleware in axios was used to be sure that every request has the token (check Api/CafeAPi)
 - A hook was used in order to throw an error when context is called outside of its provider
+- Button on the left and right of the header in the stacknavigator (check ProductsScreen.tsx)
 
 
 Features:
