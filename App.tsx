@@ -1,9 +1,10 @@
 import 'react-native-gesture-handler'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import Navigator from './src/navigator/Navigator'
 import { AuthProvider } from './src/context/AuthContext'
 import { ProductsProvider } from './src/context/ProductsContext'
+import SplashScreen from 'react-native-splash-screen'
 
 const AppState = ({children}: {children: JSX.Element | JSX.Element[]}) =>{
   return (
@@ -16,6 +17,12 @@ const AppState = ({children}: {children: JSX.Element | JSX.Element[]}) =>{
 }
 
 const App = () => {
+
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
+  
+
   return (
     <NavigationContainer>
       <AppState>
